@@ -1,0 +1,35 @@
+class Solution:
+    def reversePairs(self, nums):
+        self.count = 0
+
+        def merge_sort(arr):
+            if len(arr) <= 1:
+                return arr
+
+            mid = len(arr) // 2
+            left = merge_sort(arr[:mid])
+            right = merge_sort(arr[mid:])
+
+            # COUNT reverse pairs BEFORE merging
+            j = 0
+            for i in range(len(left)):
+                while j < len(right) and left[i] > 2 * right[j]:
+                    j += 1
+                self.count += j
+
+            # Normal merge step
+            merged = []
+            li, ri = 0, 0
+            while li < len(left) and ri < len(right):
+                if left[li] <= right[ri]:
+                    merged.append(left[li])
+                    li += 1
+                else:
+                    merged.append(right[ri])
+                    ri += 1
+            merged.extend(left[li:])
+            merged.extend(right[ri:])
+            return merged
+
+        merge_sort(nums)
+        return self.count
