@@ -22,3 +22,14 @@ Detect the node where a cycle begins using Floyd's Two-Pointer algorithm. Phase 
 
 
 Time: O(n) | Space: O(1)
+
+Assignament 3 - LeetCode 2952
+
+
+Minimum Number of Coins to Add 
+
+
+Greedy approach using a reach variable. Sort coins, then iterate — if the current coin fits within reach + 1, extend reach. If there's a gap, greedily add a coin of value reach + 1 to plug it. Repeat until reach covers the full target.
+
+
+Time: O(n log n) | Space: O(1)
