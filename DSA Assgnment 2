@@ -3,7 +3,7 @@ class Solution:
         slow = head
         fast = head
 
-        # Phase 1: detect cycle
+        # Phase 1: detect cycle 
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
