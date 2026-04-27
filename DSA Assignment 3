@@ -6,7 +6,7 @@ class Solution:
         i = 0
 
         while reach < target:
-            if i < len(coins) and coins[i] <= reach + 1:
+            if i < len(coins) and coins[i] <= reach + 1: 
                 # this coin extends our reach
                 reach += coins[i]
                 i += 1
