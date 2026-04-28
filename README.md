@@ -1,5 +1,5 @@
-# Codess
-Code for Certication in Machine Learning, UI/UX and DSA
+# DSA-Assignment
+Code for Certication in DSA.
 
 #DSA
 
