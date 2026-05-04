@@ -3,7 +3,7 @@ class Solution:
         if not grid:
             return 0
 
-        count = 0
+        count = 0 
 
         def dfs(r, c):
             # out of bounds or water or visited — stop
