@@ -15,4 +15,4 @@
                 reach += reach + 1  # add coin of value (reach+1)
                 added += 1
 
-        return added
+        return added 
