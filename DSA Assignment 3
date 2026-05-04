@@ -1,4 +1,4 @@
-class Solution:
+ class Solution:
     def minimumAddedCoins(self, coins, target):
         coins.sort()
         reach = 0 
