@@ -7,7 +7,9 @@ class Solution:
                 return arr
 
             mid = len(arr) // 2
-            left = merge_sort(arr[:mid])
+            left = merge_sort(arr[:mid]) 
+
+
             right = merge_sort(arr[mid:])
 
             # COUNT reverse pairs BEFORE merging
