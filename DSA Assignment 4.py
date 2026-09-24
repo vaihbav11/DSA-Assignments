@@ -13,6 +13,6 @@
                 current.pop()  # backtrack 
  
         backtrack([], nums) 
-        return result  
+        return result   
  
   
