@@ -1,7 +1,7 @@
  class Solution:
     def numIslands(self, grid):
         if not grid:
-            return 0
+            return 0 
  
         count = 0 
  
