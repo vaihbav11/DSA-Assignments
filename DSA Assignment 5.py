@@ -11,7 +11,7 @@
                 return
             grid[r][c] = '0'  # mark visited by sinking the land
             dfs(r+1, c)  
-            dfs(r-1, c)
+            dfs(r-1, c) 
             dfs(r, c+1)
             dfs(r, c-1)
  
